@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+  
+    
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script src="App.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="css/u.css">
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+h3,h4{
+color:#226fad;
+}
+
+</style>
+
+  </head>
+
+  <body class="size-1140">
+    <!-- HEADER -->
+
+<h1 style="text-align:center ;color:#226fad"> HOSPITALS</h1>
+<form action="demo_form.asp">
+      <!-- Section 1 -->
+      <section class="section-small-padding background-white text-center"> 
+        <div class="line">
+          <div class="margin ">
+            <div  class="s-12 m-12 l- margin-m-bottom">
+			 
+			 <ul id="hospitalList"></ul>
+			 <div data-role="main" class="ui-content">
+    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all " style="padding-left:1.2em; width:100% "> <label id="id1"type="text" name="FirstName" value="" style="height:50px"></label></a>
+
+    <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
+      <form method="post">
+        <div>
+          <h3 id="my_test"><label id="id1_1" type="text" name="FirstName" ></label></</h3>
+          <h4> Hospital Specailists:</h4>
+          <ul>
+             <label id="sp1_1"type="text" name="FirstName" value=""></label>
+              <label id="sp2_1"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Doctors:</h4>
+          <ul>
+              <label id="dr1_1"type="text" name="FirstName" value=""></label>
+              <label id="dr2_1"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Rooms:</h4>
+          <ul>
+             Empty Normal Beds:<label id="nrb_1"type="text" name="FirstName" value=""> </label>
+            Empty  ICU Beds:<label id="Irb_1"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Midical Equipments:</h4>
+          <ul>
+               <label id="eq1_1"type="text" name="FirstName" value=""> </label>
+             <label id="eq2_1"type="text" name="FirstName" value=""></label>
+          </ul>
+           <h4> Hospital Contact Information:</h4>
+          <ul>
+              Addresse: <label id="ads1_1"type="text" name="FirstName" value=""></label>
+               phone:<label id="ph_1"type="text" name="FirstName" value=""></label>
+                Email:<label id="em1_1"type="text" name="FirstName" value="">  </label>  
+          </ul>
+
+        </div>
+     
+    </div>
+  </div>
+   <div data-role="main" class="ui-content">
+    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all " style="padding-left:1.2em;width:100% "> <label  id="id2"type="text" name="FirstName" value="" style="height:50px"></label></a>
+
+    <div data-role="popup" id="myPopup" class="ui-content" style="min-width:350px; padding:100px">
+      
+        <div>
+          <h3><label id="id1_2"type="text" name="FirstName" value="" ></label></h3>
+          <h4> Hospital Specailists:</h4>
+          <ul>
+             <input id="sp1_2"type="text" name="FirstName" value="">
+              <input id="sp2_2"type="text" name="FirstName" value="">
+          </ul>
+          <h4> Hospital Doctors:</h4>
+          <ul>
+              <input id="dr1_2"type="text" name="FirstName" value="">
+              <input id="dr2_2"type="text" name="FirstName" value="">
+          </ul>
+          <h4> Hospital Rooms:</h4>
+          <ul>
+             Empty Normal Beds:<input id="nrb_2"type="text" name="FirstName" value=""> 
+            Empty  ICU Beds:<input id="Irb_2"type="text" name="FirstName" value="">
+          </ul>
+          <h4> Hospital Midical Equipments:</h4>
+          <ul>
+               <input id="eq1_2"type="text" name="FirstName" value=""> 
+             <input id="eq2_2"type="text" name="FirstName" value="">
+          </ul>
+           <h4> Hospital Contact Information:</h4>
+          <ul>
+              Addresse: <input id="ads1_2"type="text" name="FirstName" value="">
+               phone:<input id="ph_2"type="text" name="FirstName" value="">
+                Email:<input id="em1_2"type="text" name="FirstName" value="">    
+          </ul>
+
+        </div>
+     
+    </div>
+  </div>
+<div data-role="main" class="ui-content">
+    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all " style="padding-left:1.2em;width:100% "> <label  id="id3"type="text" name="FirstName" value="" style="height:50px "></label></a>
+
+    <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
+      
+	  
+      
+	  <div>
+          <h3><label  id="id1_3"type="text" name="FirstName" value="" style="height:50px "></label></h3>
+          <h4> Hospital Specailists:</h4>
+          <ul>
+             <label id="sp1_3"type="text" name="FirstName" value=""></label>
+              <label id="sp2_3"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Doctors:</h4>
+          <ul>
+              <label id="dr1_3"type="text" name="FirstName" value=""></label>
+              <label id="dr2_3"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Rooms :</h4>
+          <ul>
+             Empty Normal Beds:<label id="nrb_3"type="text" name="FirstName" value=""> </label>
+            Empty  ICU Beds:<label id="Irb_3"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Midical Equipments:</h4>
+          <ul>
+               <label id="eq1_3"type="text" name="FirstName" value=""> </label>
+             <label id="eq2_3"type="text" name="FirstName" value=""></label>
+          </ul>
+           <h4> Hospital Contact Information :</h4>
+          <ul>
+              Addresse: <label id="ads1_3"type="text" name="FirstName" value=""></label>
+               phone:<label id="ph_3"type="text" name="FirstName" value=""></label>
+                Email:<label id="em1_3"type="text" name="FirstName" value="">  </label>  
+          </ul>
+
+        </div>
+     
+    </div>
+  </div>
+<div data-role="main" class="ui-content">
+   
+    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all " style="padding-left:1.2em;width:100% "> <label  id="id4"type="text" name="FirstName" value=" " style="height:50px"></label></a>
+
+    <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
+      
+       <div>
+          <h3><label  id="id4"type="text" name="FirstName" value="" style="height:50px "></label></h3>
+          <h4> Hospital Specailists:</h4>
+          <ul>
+             <label id="sp1"type="text" name="FirstName" value=""></label>
+              <label id="sp2"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Doctors:</h4>
+          <ul>
+              <label id="dr1"type="text" name="FirstName" value=""></label>
+              <label id="dr2"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Rooms:</h4>
+          <ul>
+             Empty Normal Beds:<label id="nrb"type="text" name="FirstName" value=""> </label>
+            Empty  ICU Beds:<label id="Irb"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Midical Equipments:</h4>
+          <ul>
+               <label id="eq1"type="text" name="FirstName" value=""> </label>
+             <label id="eq2"type="text" name="FirstName" value=""></label>
+          </ul>
+           <h4> Hospital Contact Information:</h4>
+          <ul>
+              Addresse: <label id="ads1"type="text" name="FirstName" value=""></label>
+               phone:<label id="ph"type="text" name="FirstName" value=""></label>
+                Email:<label id="em1"type="text" name="FirstName" value="">  </label>  
+          </ul>
+
+        </div>
+     
+    </div>
+  </div>
+<div data-role="main" class="ui-content">
+    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all " style="padding-left:1.2em;width:100% "> <label  id="id5"type="text" name="FirstName" value="" style="height:50px"></label></a>
+ <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
+    <div>
+          <h3><label  id="id5"type="text" name="FirstName" value="" style="height:50px "></label></h3>
+          <h4> Hospital Specailists:</h4>
+          <ul>
+             <label id="sp1"type="text" name="FirstName" value=""></label>
+              <label id="sp2"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Doctors:</h4>
+          <ul>
+              <label id="dr1"type="text" name="FirstName" value=""></label>
+              <label id="dr2"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Rooms:</h4>
+          <ul>
+             Empty Normal Beds:<label id="nrb"type="text" name="FirstName" value=""> </label>
+            Empty  ICU Beds:<label id="Irb"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Midical Equipments:</h4>
+          <ul>
+               <label id="eq1"type="text" name="FirstName" value=""> </label>
+             <label id="eq2"type="text" name="FirstName" value=""></label>
+          </ul>
+           <h4> Hospital Contact Information:</h4>
+          <ul>
+              Addresse: <label id="ads1"type="text" name="FirstName" value=""></label>
+               phone:<label id="ph"type="text" name="FirstName" value=""></label>
+                Email:<label id="em1"type="text" name="FirstName" value="">  </label>  
+          </ul>
+
+        </div>
+     
+    </div>
+  </div>
+<div data-role="main" class="ui-content">
+    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all " style="padding-left:1.2em;width:100% "> <label  id="id6"type="text" name="FirstName" value="" style="height:50px"></label></a>
+ <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
+   <div>
+          <h3><label  id="id6"type="text" name="FirstName" value="" style="height:50px "></label></h3>
+          <h4> Hospital Specailists:</h4>
+          <ul>
+             <label id="sp1"type="text" name="FirstName" value=""></label>
+              <label id="sp2"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Doctors:</h4>
+          <ul>
+              <label id="dr1"type="text" name="FirstName" value=""></label>
+              <label id="dr2"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Rooms:</h4>
+          <ul>
+             Empty Normal Beds:<label id="nrb"type="text" name="FirstName" value=""> </label>
+            Empty  ICU Beds:<label id="Irb"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Midical Equipments:</h4>
+          <ul>
+               <label id="eq1"type="text" name="FirstName" value=""> </label>
+             <label id="eq2"type="text" name="FirstName" value=""></label>
+          </ul>
+           <h4> Hospital Contact Information:</h4>
+          <ul>
+              Addresse: <label id="ads1"type="text" name="FirstName" value=""></label>
+               phone:<label id="ph"type="text" name="FirstName" value=""></label>
+                Email:<label id="em1"type="text" name="FirstName" value="">  </label>  
+          </ul>
+
+        </div>
+     
+    </div>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all " style="padding-left:1.2em;width:100% "> <label  id="id7"type="text" name="FirstName" value="" style="height:50px"></label></a>
+ <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
+   <div>
+          <h3><label  id="id7"type="text" name="FirstName" value="" style="height:50px "></label></h3>
+          <h4> Hospital Specailists:</h4>
+          <ul>
+             <label id="sp1"type="text" name="FirstName" value=""></label>
+              <label id="sp2"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Doctors:</h4>
+          <ul>
+              <label id="dr1"type="text" name="FirstName" value=""></label>
+              <label id="dr2"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Rooms:</h4>
+          <ul>
+             Empty Normal Beds:<label id="nrb"type="text" name="FirstName" value=""> </label>
+            Empty  ICU Beds:<label id="Irb"type="text" name="FirstName" value=""></label>
+          </ul>
+          <h4> Hospital Midical Equipments:</h4>
+          <ul>
+               <label id="eq1"type="text" name="FirstName" value=""> </label>
+             <label id="eq2"type="text" name="FirstName" value=""></label>
+          </ul>
+           <h4> Hospital Contact Information:</h4>
+          <ul>
+              Addresse: <label id="ads1"type="text" name="FirstName" value=""></label>
+               phone:<label id="ph"type="text" name="FirstName" value=""></label>
+                Email:<label id="em1"type="text" name="FirstName" value="">  </label>  
+          </ul>
+
+        </div>
+     
+    </div>
+  </div>
+
+            </div>
+
+            </div>
+          </div>
+</form> 
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
+	<script>$(document).ready(App.init);</script>
+  </body>
+</html>

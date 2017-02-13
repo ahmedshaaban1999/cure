@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Login and Registration Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Login and Registration Form" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+
+		
+        <style>
+        button {
+    background-color: #225581;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Login and Registration Form<span> for hospitals</span></h1>
+
+            </header>
+            <section>
+                <div id="container_demo" >
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                         <div id="login" class="animate form">
+                            <form  action="mysuperscript.php" autocomplete="on">
+                             <h1>Log in</h1>
+                                    <p>
+                                                                        <label for="username" class="uname" data-icon="u" >  Email </label>
+                                                                        <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+                                                                </p>
+                                                                <p>
+                                                                        <label for="password" class="youpasswd" data-icon="p">  password </label>
+                                                                        <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
+                                                                </p>
+
+                                <p class="keeplogin">
+									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+									<label for="loginkeeping">Keep me logged in</label>
+								</p>
+                                <p class="login button">
+                                    <button type="submit" value="Login"  id="login-btn"/>   Login </button>
+								</p>
+                                <p class="change_link">
+									Not a member yet ?
+									<a href="#toregister" class="to_register">Join us</a>
+								</p>
+                            </form>
+                        </div>
+
+                        <div id="register" class="animate form">
+                                                       <form  autocomplete="on"  >
+                                
+                                <h1> Sign up </h1>
+                                <p>
+                                    <label for="usernamesignup" class="uname" data-icon="u"> organization Name</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                </p>
+                                <p>
+                                    <label for="emailsignup" class="youmail" data-icon="e" >Hospital Email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/>
+                                </p>
+                                <p>
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p>
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+
+                                <p class="signin button">
+                                    <tr>
+								 <td><a href="spec.html"><button  id="submitbutton" type="button" value="Sign up"   /> Hospital   </button></a> </td>
+                                   </form>
+                                    <form autocomplete="on"  >
+                                <td><button  id="submitbutton1" type="button" value="Sign up"  /> Clinic   </button> </td>
+                                    </tr>
+								</p>
+
+                <script>
+                function myFunction() {
+                    var pass1 = document.getElementById("passwordsignup").value;
+                    var pass2 = document.getElementById("passwordsignup_confirm").value;
+                    var ok = true;
+                    if (pass1 != pass2) {
+                        //alert("Passwords Do not match");
+                        document.getElementById("passwordsignup").style.borderColor = "#E34234";
+                        document.getElementById("passwordsignup_confirm").style.borderColor = "#E34234";
+                        ok = false;
+                        alert("Passwords don't Match!!!");
+
+}
+
+
+
+                    else {
+                       window.location.href = "index3.html"
+                    }
+                    return ok;
+                  }
+                </script>
+                      <p class="change_link">
+									Already a member ?
+									<a href="#tologin" class="to_register"> Go and log in </a>
+								</p>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="App.js"></script>
+<script>$(document).ready(App.init);</script>
+    </body>
+</html>

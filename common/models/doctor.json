@@ -1,0 +1,35 @@
+{
+  "name": "doctor",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "specialization": {
+      "type": "string",
+      "required": false
+    },
+    "working_hours": {
+      "type": "object",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
